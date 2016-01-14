@@ -10,7 +10,8 @@ public class StubEloPerformanceRating implements EloPerformanceRating {
   public static final double EQUIVALENT_RESULT = 0.500;
 
   @Override
-  public double getWinningProbability(double difference) {
+  public double getWinningProbability(double playerRating, double opponentRating) {
+    double difference = playerRating - opponentRating;
     if (difference > 0) {
       return STRONGER_RESULT;
     } else if (difference == 0) {

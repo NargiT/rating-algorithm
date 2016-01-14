@@ -30,7 +30,8 @@ public class SimpleEloPerformanceRating implements EloPerformanceRating {
   }
 
   @Override
-  public double getWinningProbability(double difference) {
+  public double getWinningProbability(double playerRating, double opponentRating) {
+    double difference = playerRating - opponentRating;
     Double aDouble = ratingsTable.get(difference);
     if (aDouble == null) {
       return getClosestProbability(difference);

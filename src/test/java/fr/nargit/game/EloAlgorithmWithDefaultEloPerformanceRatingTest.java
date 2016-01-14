@@ -8,14 +8,14 @@ import org.junit.Test;
  * Created by NargiT on 14/01/2016
  */
 // TODO: use real tests
-public class EloAlgorithmWithSimpleEloPerformanceRatingTest {
+public class EloAlgorithmWithDefaultEloPerformanceRatingTest {
 
   public static final int K_FACTOR = 20;
   private EloAlgorithm eloAlgorithm;
 
   @Before
   public void setUp() throws Exception {
-    eloAlgorithm = new EloAlgorithm(new SimpleEloPerformanceRating());
+    eloAlgorithm = new EloAlgorithm(new DefaultEloPerformanceRating());
   }
 
   @After

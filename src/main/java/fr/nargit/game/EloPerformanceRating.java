@@ -5,6 +5,5 @@ package fr.nargit.game;
  */
 public interface EloPerformanceRating {
 
-  double getWinningProbability(double difference);
-
+  double getWinningProbability(double playerRating, double opponentRating);
 }

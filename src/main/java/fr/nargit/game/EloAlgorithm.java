@@ -12,8 +12,7 @@ public class EloAlgorithm {
   }
 
   public double calculateNewElo(double playerElo, double opponentElo, int kFactor, Result result) {
-    double difference = playerElo - opponentElo;
-    return playerElo + calculateRatingDifference(kFactor, result, eloPerformanceRating.getWinningProbability(difference));
+    return playerElo + calculateRatingDifference(kFactor, result, eloPerformanceRating.getWinningProbability(playerElo, opponentElo));
   }
 
   private double calculateRatingDifference(int kFactor, Result result, double winningProbabilityForPlayer) {
