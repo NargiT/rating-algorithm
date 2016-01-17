@@ -24,17 +24,6 @@ public class EloAlgorithmWithSimpleEloPerformanceRatingTest {
   }
 
   @Test
-  public void testEloStrongerWins3Times() throws Exception {
-    double strongerElo = 2000;
-    double weakerElo = 1800;
-    for (int i = 0; i < 3; i++) {
-      System.out.println(String.format("Stronger ELO = %.2f | Weaker ELO = %.2f", strongerElo, weakerElo));
-      strongerElo = eloAlgorithm.calculateNewElo(strongerElo, weakerElo, K_FACTOR, EloAlgorithm.Result.WIN);
-      weakerElo = eloAlgorithm.calculateNewElo(weakerElo, strongerElo, K_FACTOR, EloAlgorithm.Result.LOOSE);
-    }
-  }
-
-  @Test
   public void testEloWeakerWins200Times() throws Exception {
     double strongerElo = 2000;
     double weakerElo = 1200;

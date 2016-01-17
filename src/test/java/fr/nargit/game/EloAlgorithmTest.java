@@ -8,6 +8,7 @@ import org.junit.*;
  */
 public class EloAlgorithmTest {
 
+  public static final int K_FACTOR = 15;
   private EloAlgorithm eloAlgorithm ;
   public static final int WEAKER_ELO = 1800;
   public static final int STRONGER_ELO = 2005;
@@ -26,11 +27,11 @@ public class EloAlgorithmTest {
 
   @Test
   public void testEloDraw() throws Exception {
-    double weakerResults = eloAlgorithm.calculateNewElo(WEAKER_ELO, STRONGER_ELO, 15, EloAlgorithm.Result.DRAW);
+    double weakerResults = eloAlgorithm.calculateNewElo(WEAKER_ELO, STRONGER_ELO, K_FACTOR, EloAlgorithm.Result.DRAW);
     int weakerExpectedResult = 1804;
     verifyResult(weakerResults, weakerExpectedResult);
 
-    double strongerResults = eloAlgorithm.calculateNewElo(STRONGER_ELO, WEAKER_ELO, 15, EloAlgorithm.Result.DRAW);
+    double strongerResults = eloAlgorithm.calculateNewElo(STRONGER_ELO, WEAKER_ELO, K_FACTOR, EloAlgorithm.Result.DRAW);
     int strongerExpectedResult = 2001;
     verifyResult(strongerResults, strongerExpectedResult);
 
@@ -41,11 +42,11 @@ public class EloAlgorithmTest {
 
   @Test
   public void testEloWeakerWins() throws Exception {
-    double weakerResults = eloAlgorithm.calculateNewElo(WEAKER_ELO, STRONGER_ELO, 15, EloAlgorithm.Result.WIN);
+    double weakerResults = eloAlgorithm.calculateNewElo(WEAKER_ELO, STRONGER_ELO, K_FACTOR, EloAlgorithm.Result.WIN);
     int weakerExpectedResult = 1811;
     verifyResult(weakerResults, 1811);
 
-    double strongerResults = eloAlgorithm.calculateNewElo(STRONGER_ELO, WEAKER_ELO, 15, EloAlgorithm.Result.LOOSE);
+    double strongerResults = eloAlgorithm.calculateNewElo(STRONGER_ELO, WEAKER_ELO, K_FACTOR, EloAlgorithm.Result.LOOSE);
     int strongerExpectedResult = 1994;
     verifyResult(strongerResults, strongerExpectedResult);
 
@@ -56,11 +57,11 @@ public class EloAlgorithmTest {
 
   @Test
   public void testEloStrongerWins() throws Exception {
-    double strongerResults = eloAlgorithm.calculateNewElo(STRONGER_ELO, WEAKER_ELO, 15, EloAlgorithm.Result.WIN);
+    double strongerResults = eloAlgorithm.calculateNewElo(STRONGER_ELO, WEAKER_ELO, K_FACTOR, EloAlgorithm.Result.WIN);
     int strongerExpectedResult = 2009;
     verifyResult(strongerResults, strongerExpectedResult);
 
-    double weakerResults = eloAlgorithm.calculateNewElo(WEAKER_ELO, STRONGER_ELO, 15, EloAlgorithm.Result.LOOSE);
+    double weakerResults = eloAlgorithm.calculateNewElo(WEAKER_ELO, STRONGER_ELO, K_FACTOR, EloAlgorithm.Result.LOOSE);
     int weakerExpectedResult = 1796;
     verifyResult(weakerResults, weakerExpectedResult);
 
@@ -71,18 +72,18 @@ public class EloAlgorithmTest {
 
   @Test
   public void testEloEquivalentDraw() throws Exception {
-    double player1Result = eloAlgorithm.calculateNewElo(EQUIVALENT_ELO, EQUIVALENT_ELO, 15, EloAlgorithm.Result.DRAW);
+    double player1Result = eloAlgorithm.calculateNewElo(EQUIVALENT_ELO, EQUIVALENT_ELO, K_FACTOR, EloAlgorithm.Result.DRAW);
     int player1ExpectedResult = 1400;
     verifyResult(player1Result, player1ExpectedResult);
   }
 
   @Test
   public void testEloEquivalentWin() throws Exception {
-    double player1Result = eloAlgorithm.calculateNewElo(EQUIVALENT_ELO, EQUIVALENT_ELO, 15, EloAlgorithm.Result.WIN);
+    double player1Result = eloAlgorithm.calculateNewElo(EQUIVALENT_ELO, EQUIVALENT_ELO, K_FACTOR, EloAlgorithm.Result.WIN);
     int player1ExpectedResult = 1408;
     verifyResult(player1Result, player1ExpectedResult);
 
-    double player2Result = eloAlgorithm.calculateNewElo(EQUIVALENT_ELO, EQUIVALENT_ELO, 15, EloAlgorithm.Result.LOOSE);
+    double player2Result = eloAlgorithm.calculateNewElo(EQUIVALENT_ELO, EQUIVALENT_ELO, K_FACTOR, EloAlgorithm.Result.LOOSE);
     int player2ExpectedResult = 1393;
     verifyResult(player2Result, player2ExpectedResult);
 
