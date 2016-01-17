@@ -1,4 +1,4 @@
-package fr.nargit.game;
+package fr.nargit.utils;
 
 /**
  * Created by NargiT on 13/01/2016

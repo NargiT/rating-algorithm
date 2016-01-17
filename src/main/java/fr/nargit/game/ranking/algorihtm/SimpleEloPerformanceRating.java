@@ -1,4 +1,4 @@
-package fr.nargit.game;
+package fr.nargit.game.ranking.algorihtm;
 
 import java.util.Arrays;
 import java.util.HashMap;

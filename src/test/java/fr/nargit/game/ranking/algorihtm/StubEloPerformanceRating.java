@@ -1,4 +1,4 @@
-package fr.nargit.game;
+package fr.nargit.game.ranking.algorihtm;
 
 /**
  * Created by NargiT on 14/01/2016

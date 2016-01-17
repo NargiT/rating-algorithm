@@ -1,11 +1,8 @@
-package fr.nargit.game;
+package fr.nargit.utils;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by NargiT on 13/01/2016

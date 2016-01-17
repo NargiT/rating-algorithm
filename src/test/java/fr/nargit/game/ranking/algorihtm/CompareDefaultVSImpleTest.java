@@ -1,10 +1,8 @@
-package fr.nargit.game;
+package fr.nargit.game.ranking.algorihtm;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.Locale;
 
 /**
  * Created by NargiT on 14/01/2016

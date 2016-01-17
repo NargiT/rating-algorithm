@@ -1,4 +1,4 @@
-package fr.nargit.game;
+package fr.nargit.game.ranking.algorihtm;
 
 import org.junit.After;
 import org.junit.Before;
@@ -8,14 +8,14 @@ import org.junit.Test;
  * Created by NargiT on 14/01/2016
  */
 // TODO: use real tests
-public class EloAlgorithmWithSimpleEloPerformanceRatingTest {
+public class EloAlgorithmWithDefaultEloPerformanceRatingTest {
 
   public static final int K_FACTOR = 20;
   private EloAlgorithm eloAlgorithm;
 
   @Before
   public void setUp() throws Exception {
-    eloAlgorithm = new EloAlgorithm(new SimpleEloPerformanceRating());
+    eloAlgorithm = new EloAlgorithm(new DefaultEloPerformanceRating());
   }
 
   @After
@@ -38,4 +38,13 @@ public class EloAlgorithmWithSimpleEloPerformanceRatingTest {
     }
   }
 
+  @Test
+  public void testEloDefaultWithKFactor20() throws Exception {
+    double playerOne = 1029.43;
+    double playerTwo = 1010.3;
+    int kFactor = 20;
+    double newPLayerOne = eloAlgorithm.calculateNewElo(playerOne, playerTwo, kFactor, EloAlgorithm.Result.WIN);
+    double newPlayerTwo = eloAlgorithm.calculateNewElo(playerTwo, playerOne, kFactor, EloAlgorithm.Result.LOOSE);
+    System.out.println(String.format("Player One ELO = %.2f | Player Two ELO = %.2f", newPLayerOne, newPlayerTwo));
+  }
 }

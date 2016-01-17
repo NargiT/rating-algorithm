@@ -1,7 +1,11 @@
-package fr.nargit.game;
+package fr.nargit.game.ranking.algorihtm;
 
+import fr.nargit.utils.MathUtils;
 import org.hamcrest.CoreMatchers;
-import org.junit.*;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * Created by NargiT on 13/01/2016
