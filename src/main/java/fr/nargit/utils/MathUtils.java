@@ -7,11 +7,11 @@ public class MathUtils {
 
   public static int roundToHalf(double value) {
     double decimals = value - (long) value;
-    if (decimals>= 0.5) {
-      double roundedValue = Math.round(value*2.0)/2.0;
-      return (int)Math.ceil(roundedValue);
+    if (decimals >= 0.5) {
+      double roundedValue = Math.round(value * 2.0) / 2.0;
+      return (int) Math.ceil(roundedValue);
     }
-    return (int)value;
+    return (int) value;
   }
 
 }

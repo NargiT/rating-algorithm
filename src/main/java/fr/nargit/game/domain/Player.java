@@ -1,7 +1,5 @@
 package fr.nargit.game.domain;
 
-import java.util.Date;
-
 /**
  * (c) 17-janv.-2016
  *
@@ -11,8 +9,24 @@ public class Player {
   public static final double NOOB_RANK = 1000d;
 
   private String name;
-  private Double rank;
-  private Date creationDate;
+  private Double quotation;
+
+  public Player(String name, Double quotation) {
+    this.name = name;
+    this.quotation = quotation;
+  }
+
+  public Player(String name) {
+    this.name = name;
+    this.quotation = NOOB_RANK;
+  }
+
+  @Override
+  public int hashCode() {
+    int result = name != null ? name.hashCode() : 0;
+    result = 31 * result + (quotation != null ? quotation.hashCode() : 0);
+    return result;
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -22,21 +36,16 @@ public class Player {
     Player player = (Player) o;
 
     if (name != null ? !name.equals(player.name) : player.name != null) return false;
-    return rank != null ? rank.equals(player.rank) : player.rank == null;
+    return quotation != null ? quotation.equals(player.quotation) : player.quotation == null;
 
   }
 
   @Override
-  public int hashCode() {
-    int result = name != null ? name.hashCode() : 0;
-    result = 31 * result + (rank != null ? rank.hashCode() : 0);
-    return result;
-  }
-
-  public Player(String name) {
-    this.name = name;
-    this.rank = NOOB_RANK;
-    this.creationDate = new Date();
+  public String toString() {
+    return "Player{" +
+        "name='" + name + '\'' +
+        ", quotation=" + quotation +
+        '}';
   }
 
   public String getName() {
@@ -47,27 +56,11 @@ public class Player {
     this.name = name;
   }
 
-  public Double getRank() {
-    return rank;
+  public Double getQuotation() {
+    return quotation;
   }
 
-  public void setRank(Double rank) {
-    this.rank = rank;
-  }
-
-  public Date getCreationDate() {
-    return creationDate;
-  }
-
-  public void setCreationDate(Date creationDate) {
-    this.creationDate = creationDate;
-  }
-
-  @Override
-  public String toString() {
-    return "Player{" +
-        "name='" + name + '\'' +
-        ", rank=" + rank +
-        '}';
+  public void setQuotation(Double quotation) {
+    this.quotation = quotation;
   }
 }

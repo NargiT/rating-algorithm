@@ -15,12 +15,12 @@ public class Tournament {
   private final Set<Player> participants;
   private final List<Match> matches;
 
-  public Tournament(Player ... players) {
+  public Tournament(Player... players) {
     participants = new HashSet<>(Arrays.asList(players));
     matches = new LinkedList<>();
   }
 
-  public boolean hasAll(Player ... players) {
+  public boolean hasAll(Player... players) {
     return participants.containsAll(Arrays.asList(players));
   }
 

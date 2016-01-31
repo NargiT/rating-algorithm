@@ -1,4 +1,4 @@
-package fr.nargit.game.ranking.algorihtm;
+package fr.nargit.game.ranking.algorihtm.elo.performance;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -8,11 +8,11 @@ import java.util.Set;
 /**
  * Created by NargiT on 13/01/2016
  */
-public class SimpleEloPerformanceRating implements EloPerformanceRating {
+public class SimpleEloPerformance implements EloPerformance {
 
   private final Map<Double, Double> ratingsTable;
 
-  public SimpleEloPerformanceRating() {
+  public SimpleEloPerformance() {
     ratingsTable = new HashMap<>();
     ratingsTable.put(-800.0, 0.0);
     ratingsTable.put(-677.0, 0.01);

@@ -4,7 +4,6 @@ import fr.nargit.game.domain.Match;
 import fr.nargit.game.domain.Player;
 import fr.nargit.game.domain.Tournament;
 
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -31,22 +30,5 @@ public class TournamentManagement {
 
   public List<Match> getMatches() {
     return tournament.getMatches();
-  }
-
-  public void updateResult(int matchId, Player winner, Player loser) {
-    updateResult(matchId, Collections.singletonList(winner), Collections.singletonList(loser), Collections.EMPTY_LIST);
-  }
-
-  public void updateResult(int matchId, List<Player> winners, List<Player> losers, List<Player> draws) {
-    Match match = tournament.getMatches().get(matchId);
-    for (Player player : winners) {
-      match.addWinner(player);
-    }
-    for (Player player : losers) {
-      match.addLoser(player);
-    }
-    for (Player player : draws) {
-      match.addDraw(player);
-    }
   }
 }

@@ -1,9 +1,9 @@
-package fr.nargit.game.ranking.algorihtm;
+package fr.nargit.game.ranking.algorihtm.elo.performance;
 
 /**
  * Created by NargiT on 13/01/2016
  */
-public class DefaultEloPerformanceRating implements EloPerformanceRating {
+public class DefaultEloPerformance implements EloPerformance {
 
   @Override
   public double getWinningProbability(double playerRating, double opponentRating) {
@@ -12,6 +12,6 @@ public class DefaultEloPerformanceRating implements EloPerformanceRating {
   }
 
   private double transformedRating(double value) {
-    return Math.pow(10, value/400.0);
+    return Math.pow(10, value / 400.0);
   }
 }

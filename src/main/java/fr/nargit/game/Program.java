@@ -4,6 +4,7 @@ import fr.nargit.game.domain.Match;
 import fr.nargit.game.domain.Player;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * (c) 17-janv.-2016
@@ -31,14 +32,12 @@ public class Program {
     tournamentManagement.createMatch(today, michael, nico);
     tournamentManagement.createMatch(today, quentin, tigran);
 
-    tournamentManagement.updateResult(0, michael, tigran);
-
     showTournament(tournamentManagement);
   }
 
   private static void showTournament(TournamentManagement tournamentManagement) {
     int i = 0;
-    for (Match match  : tournamentManagement.getMatches()) {
+    for (Match match : tournamentManagement.getMatches()) {
       System.out.println(String.format("Match %d: all players %s", i, match.getPlayers()));
       System.out.println(String.format("Winners : %s", match.getWinners()));
       System.out.println(String.format("Losers  : %s", match.getLosers()));

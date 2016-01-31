@@ -1,9 +1,9 @@
-package fr.nargit.game.ranking.algorihtm;
+package fr.nargit.game.ranking.algorihtm.elo.performance;
 
 /**
  * Created by NargiT on 14/01/2016
  */
-public class StubEloPerformanceRating implements EloPerformanceRating {
+public class StubEloPerformance implements EloPerformance {
 
   public static final double STRONGER_RESULT = 0.765;
   public static final double WEAKER_RESULT = 0.235;
