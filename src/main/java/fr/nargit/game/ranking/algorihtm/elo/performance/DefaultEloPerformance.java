@@ -7,8 +7,9 @@ public class DefaultEloPerformance implements EloPerformance {
 
   @Override
   public double getWinningProbability(double playerRating, double opponentRating) {
-    //   return 1/(Math.pow(10,-(playerRating-opponentRating)/400)+1);
-    return transformedRating(playerRating) / (transformedRating(playerRating) + transformedRating(opponentRating));
+    //  return 1/(Math.pow(10,-(playerRating-opponentRating)/400)+1);
+    //  return transformedRating(playerRating) / (transformedRating(playerRating) + transformedRating(opponentRating));
+    return 1 / (1 + transformedRating(opponentRating - playerRating));
   }
 
   private double transformedRating(double value) {
