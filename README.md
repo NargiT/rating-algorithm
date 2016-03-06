@@ -9,7 +9,7 @@ The Rating Algorithm library implement a rating system (Based on ELO) in order t
 * 2 vs 2 vs 2 vs ...
 
 
-You decide about the K factor and provide the player current elo points with it's 'position' (see <a href="#position">How to choose position ?</a>) in the game, and
+You decide about the K factor and provide the player current elo points with it's 'position' (see **How to choose position** ?) in the game, and
  the algorithm calculates the new elo points.
 
 It is a very low level library, so make sure you are using it correctly.
