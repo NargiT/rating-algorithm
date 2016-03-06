@@ -1,4 +1,4 @@
-package fr.nargit.game.ranking.algorihtm.elo.performance;
+package fr.nargit.rating.algorihtm.elo.performance;
 
 /**
  * Created by NargiT on 13/01/2016

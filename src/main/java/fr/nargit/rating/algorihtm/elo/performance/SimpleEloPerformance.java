@@ -1,4 +1,4 @@
-package fr.nargit.game.ranking.algorihtm.elo.performance;
+package fr.nargit.rating.algorihtm.elo.performance;
 
 import java.util.Arrays;
 import java.util.HashMap;

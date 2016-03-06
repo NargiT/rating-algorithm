@@ -1,4 +1,4 @@
-package fr.nargit.utils;
+package fr.nargit.rating.utils;
 
 /**
  * Created by NargiT on 13/01/2016

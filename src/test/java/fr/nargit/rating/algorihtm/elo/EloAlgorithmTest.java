@@ -1,7 +1,7 @@
-package fr.nargit.game.ranking.algorihtm.elo;
+package fr.nargit.rating.algorihtm.elo;
 
-import fr.nargit.game.ranking.algorihtm.elo.performance.StubEloPerformance;
-import fr.nargit.utils.MathUtils;
+import fr.nargit.rating.algorihtm.elo.performance.StubEloPerformance;
+import fr.nargit.rating.utils.MathUtils;
 import org.hamcrest.CoreMatchers;
 import org.junit.After;
 import org.junit.Assert;

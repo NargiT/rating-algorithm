@@ -1,8 +1,8 @@
-package fr.nargit.game.ranking.algorihtm.elo.performance.compare;
+package fr.nargit.rating.algorihtm.elo.performance.compare;
 
-import fr.nargit.game.ranking.algorihtm.elo.EloAlgorithm;
-import fr.nargit.game.ranking.algorihtm.elo.performance.DefaultEloPerformance;
-import fr.nargit.game.ranking.algorihtm.elo.performance.SimpleEloPerformance;
+import fr.nargit.rating.algorihtm.elo.EloAlgorithm;
+import fr.nargit.rating.algorihtm.elo.performance.DefaultEloPerformance;
+import fr.nargit.rating.algorihtm.elo.performance.SimpleEloPerformance;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;

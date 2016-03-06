@@ -1,6 +1,6 @@
-package fr.nargit.game.ranking.algorihtm.elo;
+package fr.nargit.rating.algorihtm.elo;
 
-import fr.nargit.game.ranking.algorihtm.elo.performance.DefaultEloPerformance;
+import fr.nargit.rating.algorihtm.elo.performance.DefaultEloPerformance;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.Matchers;
 import org.junit.After;

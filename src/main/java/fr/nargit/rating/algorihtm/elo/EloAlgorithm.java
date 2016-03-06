@@ -1,6 +1,6 @@
-package fr.nargit.game.ranking.algorihtm.elo;
+package fr.nargit.rating.algorihtm.elo;
 
-import fr.nargit.game.ranking.algorihtm.elo.performance.EloPerformance;
+import fr.nargit.rating.algorihtm.elo.performance.EloPerformance;
 
 import java.util.Collections;
 import java.util.List;

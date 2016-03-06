@@ -1,4 +1,4 @@
-package fr.nargit.utils;
+package fr.nargit.rating.utils;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
