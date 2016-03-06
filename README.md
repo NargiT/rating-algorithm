@@ -66,7 +66,7 @@ Position | Player | Result
 1 | Alex | 15
 2 | Michelle | 12
 3 | David | 10
-4 | James | 10
+3 | James | 10
 5 | John | 8
 
 In order for rating algorithm to understand that there is a draw, you need to use the following position for
@@ -75,7 +75,7 @@ David, James and John
 Real position | Player | Technical Position
 --- | --- | ---
 3 | David | 3.5
-4 | James | 3.5
+3 | James | 3.5
 5 | John | 5
 
 ## Links
