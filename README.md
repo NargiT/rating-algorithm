@@ -14,6 +14,10 @@ You decide about the K factor and provide the player current elo points with it'
 
 It is a very low level library, so make sure you are using it correctly.
 
+## Change LOG
+1.0 - First version with ELO Support for 1v1, 2v2 ... and 1v1v1....
+
+
 ## Examples : 1 winner 1 loser
   The winner wins points, whereas the loser loses points
 ```java
