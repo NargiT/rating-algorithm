@@ -102,9 +102,9 @@
 	</distributionManagement>
 
 	<scm>
-		<connection>scm:hg:ssh://hg@bitbucket.org/NargiT00/algorithms</connection>
-		<developerConnection>scm:hg:ssh://hg@bitbucket.org/NargiT00/algorithms</developerConnection>
-		<url>https://bitbucket.org/NargiT00/algorithms</url>
+		<connection>scm:hg:http://bitbucket.org/NargiT00/algorithms</connection>
+		<developerConnection>scm:hg:https://bitbucket.org/NargiT00/algorithms</developerConnection>
+		<url>http://bitbucket.org/NargiT00/algorithms</url>
 	</scm>
 
 </project>
