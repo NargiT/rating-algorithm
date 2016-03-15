@@ -6,6 +6,7 @@
     <artifactId>algorithms</artifactId>
     <version>1.1-SNAPSHOT</version>
 
+    <name>Open Rating Algorithms</name>
     <description>The Rating Algorithm library implement a rating system (Based on ELO) in order to handle multiple types
         of games (1v1, 2v2, 1v1v1...)
     </description>
