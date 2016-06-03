@@ -62,7 +62,7 @@ double player6NewQuotation = eloAlgorithm.calculateDeltaQuotation(BASE_RANK, opp
 double player7NewQuotation = eloAlgorithm.calculateDeltaQuotation(BASE_RANK, opponents, 6.5, K_FACTOR);
 ```
 
-## <div id="position">How to choose position ?
+## How to choose position ?
 Well, the library is at the very low level, let say if you have the following results from your tournament
 
 Position | Player | Result
@@ -86,5 +86,3 @@ Real position | Player | Technical Position
 * https://en.wikipedia.org/wiki/Elo_rating_system
 * http://sradack.blogspot.ch/2008/06/elo-rating-system-multiple-players.html
 * And everything else on internet that helped me to implement something that I think is ok
-
-
