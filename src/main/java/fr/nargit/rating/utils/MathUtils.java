@@ -5,6 +5,9 @@ package fr.nargit.rating.utils;
  */
 public class MathUtils {
 
+  private MathUtils() {
+  }
+
   public static int roundToHalf(double value) {
     double decimals = value - (long) value;
     if (decimals >= 0.5) {
