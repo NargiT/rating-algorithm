@@ -150,9 +150,9 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:hg:http://bitbucket.org/NargiT00/algorithms</connection>
-        <developerConnection>scm:hg:https://bitbucket.org/NargiT00/algorithms</developerConnection>
-        <url>http://bitbucket.org/NargiT00/algorithms</url>
+	    <connection>scm:git:ssh://github.com:NargiT/rating-algorithm.git</connection>
+        <developerConnection>scm:git:ssh://github.com:NargiT/rating-algorithm.git</developerConnection>
+        <url>https://github.com/NargiT/rating-algorithm</url>
       <tag>HEAD</tag>
   </scm>
 
