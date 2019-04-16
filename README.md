@@ -86,3 +86,4 @@ Real position | Player | Technical Position
 * https://en.wikipedia.org/wiki/Elo_rating_system
 * http://sradack.blogspot.ch/2008/06/elo-rating-system-multiple-players.html
 * And everything else on internet that helped me to implement something that I think is ok
+* central issue: https://issues.sonatype.org/browse/OSSRH-21018
